@@ -8,8 +8,11 @@ const productList = ({ products }) => {
         {products.map((product) => {
           return (
             <div key={product.id} className="hero min-h-screen bg-base-100">
-              <div className={`hero-content flex-col lg:${product.id == 2 ? "flex-row" : "flex-row-reverse"}`
-              }>
+              <div
+                className={`hero-content flex-col md:${
+                  product.id == 2 ? "flex-row-reverse" : "flex-row"
+                }`}
+              >
                 <Link href={`/products/${product?.id}`}>
                   <Image
                     className="max-w-sm rounded-lg shadow-2xl"
