@@ -13,7 +13,7 @@ const productList = ({ products }) => {
                   product.id == 2 ? "flex-row-reverse" : "flex-row"
                 }`}
               >
-                <Link href={`/products/${product?.id}`}>
+                <Link href={`/products/${product.id}`}>
                   <Image
                     className="max-w-sm rounded-lg shadow-2xl"
                     src={product.image}
@@ -22,7 +22,7 @@ const productList = ({ products }) => {
                   />
                 </Link>
                 <div>
-                  <Link href={`/products/${product?.id}`}>
+                  <Link href={`/products/${product.id}`}>
                     <h1 className="text-5xl font-bold"> {product.title} </h1>
                   </Link>
                   <p className="py-6">{product.body}</p>
